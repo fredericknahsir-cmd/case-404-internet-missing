@@ -26,3 +26,8 @@ h1 { font-size: clamp(1.7rem, 5vw, 3rem); }
     .solved { outline: 3px solid #78d6a6; }
 
     #restartBtn { background: #b7d5f5; }
+
+    @media (max-width: 560px) {
+        .case-file { margin: 14px auto; }
+        button, select { width: 100%; margin: 6px 0; }
+    }
