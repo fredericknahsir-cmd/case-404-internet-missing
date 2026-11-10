@@ -56,3 +56,26 @@ function questionSpinner() {
     spinnerReply.textContent =
     "I was buffering all night. Ask the cookie.";
 }
+
+const accuseBtn = document.querySelector("#accuseBtn");
+const suspectChoice = document.querySelector("#suspectChoice");
+const verdictText = document.querySelector("#verdictText");
+const caseFile = document.querySelector(".case-file");
+let solved = false;
+function makeAccusation() {
+    if (solved) return;
+    if (evidence.length !== 3) {
+        verdictText.textContent = "Collect all three clues first.";
+        return;
+    }
+    if (suspectChoice.value === "cookie") {
+        solved = true;
+        caseFile.classList.add("solved");
+        verdictText.textContent =
+            "CASE SOLVED! Cookie changed the router password.";
+    } else {
+        verdictText.textContent =
+        "Wrong suspect. Review the evidence and try again.";
+    }
+}
+accuseBtn.addEventListener("click", makeAccusation);
