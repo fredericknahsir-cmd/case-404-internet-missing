@@ -79,3 +79,9 @@ function makeAccusation() {
     }
 }
 accuseBtn.addEventListener("click", makeAccusation);
+
+const restartBtn = document.querySelector("restartBtn");
+function restartInvestigation() {
+    window.location.reload();
+}
+restartBtn.addEventListener("click", restartInvestigation);
