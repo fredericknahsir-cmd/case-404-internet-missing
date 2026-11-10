@@ -26,3 +26,12 @@ function inspectLog() {
     addEvidence("Log: Cookie accessed the router at 02:14.");
 }
 inspectionBtn.addEventListener("click", inspectLog);
+
+const cookieBtn = document.querySelector("#cookieBtn");
+const cookieReply = document.querySelector("#cookieReply");
+function questionCookie() {
+    cookieReply.textContent =
+    "I was just storing preferences. Nothing suspicious!";
+    addEvidence("Statement: Cookie denies visiting the router.");
+}
+cookieBtn.addEventListener("click", questionCookie);
