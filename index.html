@@ -38,5 +38,18 @@
         <p id="passwordReply">"I can't remember anything."</p>
         <button id="passwordBtn">Question Password</button>
     </section>
+
+    <section class="verdict">
+        <h2>Final Accusation</h2>
+        <label for="suspectChoice">Who sabotaged the internet?</label>
+        <select id="suspectChoice">
+            <option value="">Choose a suspect</option>
+            <option value="spinner">Loading Spinner</option>
+            <option value="cookie">Browser Cookie</option>
+            <option value="password">Forgotten Password</option>
+        </select>
+        <button id="accuseBtn">Make Accusation</button>
+        <p id="verdictText" aria-live="polite">Case remains open.</p>
+    </section>
 </body>
 </html>
