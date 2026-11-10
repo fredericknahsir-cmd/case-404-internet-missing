@@ -50,3 +50,9 @@ function questionPassword() {
         addEvidence("Note: Cookie changed the router password.");
 }
 passwordBtn.addEventListener("click", questionPassword);
+
+function questionSpinner() {
+    spinnerQuestioned = true;
+    spinnerReply.textContent =
+    "I was buffering all night. Ask the cookie.";
+}
