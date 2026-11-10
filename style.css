@@ -6,3 +6,8 @@ font-family: system-ui, sans-serif; }
 h1 { font-size: clamp(1.7rem, 5vw, 3rem); }
 #briefing { background: #1c2b3e; padding: 18px;
     border-left: 5px solid #f0b85e; }
+
+    .suspect { margin-top: 20px; padding: 18px;
+     background: #f0b85e; color: #172030; font-weight: bold;
+    cursor: pointer; }
+    button:hover { filter: brightness(1.12); }
