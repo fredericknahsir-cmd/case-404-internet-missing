@@ -35,3 +35,18 @@ function questionCookie() {
     addEvidence("Statement: Cookie denies visiting the router.");
 }
 cookieBtn.addEventListener("click", questionCookie);
+
+const passwordBtn = document.querySelector("#passwordBtn");
+const passwordReply = document.querySelector("#passwordReply");
+let spinnierQuestioned = false;
+function questionPassword() {
+    if (!spinnierQuestioned) {
+        passwordReply.textContent =
+        "Ask the spinner first. I need a memory jog.";
+        return;
+    }
+    passwordReply.textContent =
+        "I found a note: COOKIE changed the router password!";
+        addEvidence("Note: Cookie changed the router password.");
+}
+passwordBtn.addEventListener("click", questionPassword);
